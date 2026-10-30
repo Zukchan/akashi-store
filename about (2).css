@@ -1,0 +1,100 @@
+/* =====================================================
+   about.css  |  ANGGOTA 2
+   Isi: About / Profile Section
+===================================================== */
+
+.about-section {
+  padding: 82px 24px;
+  background:
+    radial-gradient(ellipse at 15% 50%, rgba(233, 22, 70, 0.12), transparent 45%),
+    #101014;
+}
+
+.about-container {
+  max-width: 1160px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 56px;
+}
+
+.about-label {
+  margin: 0 0 14px;
+  color: var(--highlight);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.about-content h2 {
+  margin: 0 0 20px;
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.2;
+}
+
+.about-content h2 span {
+  color: var(--highlight);
+}
+
+.about-content p {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.about-card {
+  padding: 30px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: linear-gradient(145deg, #1b171c, #121216);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
+}
+
+.about-card h3 {
+  margin: 0 0 18px;
+  font-size: 18px;
+}
+
+.about-points {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.about-check {
+  display: inline-grid;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(233, 22, 70, 0.16);
+  color: var(--highlight);
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-section {
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+}
