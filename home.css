@@ -1,0 +1,366 @@
+/* =====================================================
+   home.css  |  ANGGOTA 1
+   Isi: Home / Hero Section (+ kartu informasi)
+   Navbar ada di base.css
+===================================================== */
+
+/* LATAR HOME */
+.home-section {
+  position: relative;
+  isolation: isolate;
+  background:
+    radial-gradient(
+      ellipse at 85% 35%,
+      rgba(233, 22, 70, 0.19),
+      transparent 52%
+    ),
+    var(--background);
+}
+
+.home-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    );
+  background-size: 48px 48px;
+}
+
+.home-container {
+  max-width: 1160px;
+  margin: auto;
+  padding: 76px 24px 44px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 54px;
+}
+
+.hero-content {
+  min-width: 0;
+}
+
+.hero-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 20px;
+  padding: 9px 14px;
+  border: 1px solid rgba(255, 99, 133, 0.4);
+  border-radius: 999px;
+  background: rgba(233, 22, 70, 0.08);
+  color: var(--highlight);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.hero-label::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--highlight);
+  flex-shrink: 0;
+}
+
+.hero h1 {
+  margin: 0 0 24px;
+  font-size: clamp(36px, 4.7vw, 60px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+
+.hero h1 span {
+  color: var(--highlight);
+}
+
+/* KILAU PADA TULISAN PILIHANMU */
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .hero h1 span {
+    background: linear-gradient(
+      110deg,
+      #ff6385 0%,
+      #ff6385 35%,
+      #ffffff 50%,
+      #ff6385 65%,
+      #ff6385 100%
+    );
+    background-size: 250% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: akashiTextShine 4s linear infinite;
+  }
+}
+
+.hero-description {
+  max-width: 560px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.hero-button,
+.hero-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 50px;
+  padding: 14px 23px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    transform 0.2s;
+}
+
+.hero-button {
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #ffffff;
+  animation: akashiGlow 2s ease-in-out infinite;
+}
+
+.hero-button:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+.hero-secondary {
+  border: 1px solid #65525b;
+  background: rgba(20, 20, 25, 0.7);
+  color: var(--text);
+}
+
+.hero-secondary:hover {
+  border-color: var(--highlight);
+  background: #25151c;
+}
+
+/* LOGO */
+.hero-visual {
+  position: relative;
+  min-width: 0;
+  padding: 26px;
+}
+
+.hero-visual::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border: 1px solid rgba(255, 99, 133, 0.28);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero-logo {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 50px rgba(233, 22, 70, 0.2);
+  animation: akashiFloat 3s ease-in-out infinite;
+}
+
+/* KARTU INFORMASI */
+.home-features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 62px;
+}
+
+.home-feature {
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: rgba(20, 20, 25, 0.9);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  background: rgba(233, 22, 70, 0.13);
+  color: var(--highlight);
+}
+
+.feature-icon svg {
+  width: 23px;
+  height: 23px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.home-feature h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.home-feature p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.hero-note {
+  margin: 30px 0 0;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+  color: #aaa4b0;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* ANIMASI LOGO */
+@keyframes akashiFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+
+  50% {
+    transform: translateY(-24px) rotate(2deg);
+  }
+}
+
+/* ANIMASI CAHAYA TOMBOL */
+@keyframes akashiGlow {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(233, 22, 70, 0.25);
+  }
+
+  50% {
+    box-shadow: 0 0 28px rgba(233, 22, 70, 0.65);
+  }
+}
+
+/* ANIMASI KILAU TEKS */
+@keyframes akashiTextShine {
+  from {
+    background-position: 200% center;
+  }
+
+  to {
+    background-position: -50% center;
+  }
+}
+
+@media (hover: hover) {
+  .hero-button:hover,
+  .hero-secondary:hover {
+    transform: translateY(-3px);
+  }
+
+  .home-feature:hover {
+    transform: translateY(-5px);
+    border-color: var(--highlight);
+  }
+}
+
+/* TABLET */
+@media (max-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .hero-visual {
+    width: min(100%, 350px);
+    justify-self: center;
+  }
+
+  .home-container {
+    padding-top: 48px;
+  }
+
+  .home-features {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+}
+
+/* PONSEL */
+@media (max-width: 600px) {
+  .hero h1 {
+    letter-spacing: -0.8px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-label {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
+
+/* MENGIKUTI PENGATURAN PENGURANGAN GERAKAN */
+@media (prefers-reduced-motion: reduce) {
+  .hero-logo,
+  .hero-button,
+  .hero h1 span {
+    animation: none;
+  }
+
+  .hero h1 span {
+    background: none;
+    color: var(--highlight);
+  }
+
+  .hero-button,
+  .hero-secondary,
+  .home-feature {
+    transition: none;
+  }
+
+  .hero-button:hover,
+  .hero-secondary:hover,
+  .home-feature:hover {
+    transform: none;
+  }
+}
