@@ -75,29 +75,23 @@ Kelompok: [nama kelompok]
 
 ## Pembagian Tugas dan Kontribusi
 
-**[Nama Anggota 1] - Navbar & Home / Hero**
-- Branch: `feature/navbar`, `feature/homepage`
+**[Zaky Izzatul_Zulfia] - Navbar & Home**
+- Branch: `feature/homepage`
 - Issue: #[nomor], #[nomor]
 - Pekerjaan: merapikan navbar dan hero, memeriksa tombol dan animasi di homepage, serta memastikan tampilan responsif.
 - Pull Request: [link PR]
 
-**[Nama Anggota 2] - About / Profile**
+**[Randy Fadlan Sophian] - About**
 - Branch: `feature/about`
-- Issue: #[nomor], #[nomor]
 - Pekerjaan: melengkapi latar belakang, visi dan misi, menyelaraskan penamaan menu, serta memeriksa tampilan About di layar kecil.
-- Pull Request: [link PR]
 
-**[Nama Anggota 3] - Main Content (Katalog Akun)**
+**[Dede wahyudin] - Main Content (Katalog Akun)**
 - Branch: `feature/main-content`
-- Issue: #[nomor], #[nomor]
 - Pekerjaan: melengkapi data Akun #2 dan #3, serta mengganti foto sesuai masing-masing akun.
-- Pull Request: [link PR]
 
-**[Nama Anggota 4] - Contact & Footer**
+**[Ahmad nur latif] - Contact & Footer**
 - Branch: `feature/contact`
-- Issue: #[nomor], #[nomor]
 - Pekerjaan: merapikan bagian kontak, termasuk status Instagram, serta menyelaraskan footer dan menghapus CSS yang duplikat.
-- Pull Request: [link PR]
 
 **Bersama:** README dan screenshot. PIC: [nama].
 
