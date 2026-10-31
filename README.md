@@ -51,8 +51,8 @@ Website ini tidak memerlukan instalasi tambahan.
 
 1. Clone repository ini:
    ```bash
-   git clone https://github.com/[username]/[nama-repo].git
-   cd [nama-repo]
+   git clone https://github.com/Zukchan/akashi-store.git
+   cd akashi-store
    ```
 2. Buka file `index.html` langsung di browser, atau jalankan local server:
    ```bash
@@ -64,36 +64,42 @@ Pastikan file gambar (`logo.jpeg`, `slide1.jpeg`, `slide2.jpeg`) berada di folde
 
 ## Anggota Kelompok
 
-Kelompok: 
+Kelompok: [nama kelompok]
 
 | Nama | Username GitHub | Bagian |
 |---|---|---|
-| [Nama Anggota 1] | [@username1] | Navbar & Home / Hero |
-| [Nama Anggota 2] | [@username2] | About / Profile |
-| [Nama Anggota 3] | [@username3] | Main Content (Katalog Akun) |
-| [Nama Anggota 4] | [@username4] | Contact & Footer |
+| Zaky Izzatul Zulfia | [@username1] | Navbar & Home / Hero |
+| Randy Fadlan Sophian | [@username2] | About / Profile |
+| Dede Wahyudin | [@username3] | Main Content (Katalog Akun) |
+| Ahmad Nur Latif | [@username4] | Contact & Footer |
 
 ## Pembagian Tugas dan Kontribusi
 
-**[Zaky Izzatul_Zulfia] - Navbar & Home**
+**Zaky Izzatul Zulfia - Navbar & Home / Hero**
 - Branch: `feature/homepage`
 - Issue: #[nomor], #[nomor]
 - Pekerjaan: merapikan navbar dan hero, memeriksa tombol dan animasi di homepage, serta memastikan tampilan responsif.
-- Pull Request: [link PR]
+- Pull Request: https://github.com/Zukchan/akashi-store/pull/6
 
-**[Randy Fadlan Sophian] - About**
+**Randy Fadlan Sophian - About / Profile**
 - Branch: `feature/about`
+- Issue: #[nomor], #[nomor]
 - Pekerjaan: melengkapi latar belakang, visi dan misi, menyelaraskan penamaan menu, serta memeriksa tampilan About di layar kecil.
+- Pull Request: https://github.com/Zukchan/akashi-store/pull/7
 
-**[Dede wahyudin] - Main Content (Katalog Akun)**
+**Dede Wahyudin - Main Content (Katalog Akun)**
 - Branch: `feature/main-content`
+- Issue: #[nomor], #[nomor]
 - Pekerjaan: melengkapi data Akun #2 dan #3, serta mengganti foto sesuai masing-masing akun.
+- Pull Request: https://github.com/Zukchan/akashi-store/pull/5
 
-**[Ahmad nur latif] - Contact & Footer**
+**Ahmad Nur Latif - Contact & Footer**
 - Branch: `feature/contact`
+- Issue: #[nomor], #[nomor]
 - Pekerjaan: merapikan bagian kontak, termasuk status Instagram, serta menyelaraskan footer dan menghapus CSS yang duplikat.
+- Pull Request: https://github.com/Zukchan/akashi-store/pull/4
 
-**Bersama:** README dan screenshot. PIC:.
+**Bersama:** README dan screenshot. PIC: [nama].
 
 ## Alur Kerja Git
 
