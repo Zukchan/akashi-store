@@ -6,26 +6,26 @@ Website statis katalog akun Mobile Legends yang dibuat sebagai mini project **We
 
 ## Deskripsi
 
-Akashi Store adalah website satu halaman (single-page) yang menampilkan katalog akun Mobile Legends. Pengunjung dapat melihat informasi rank, jumlah hero dan skin, server, serta harga setiap akun, lalu menghubungi kontak yang tersedia untuk bertanya lebih lanjut.
+Akashi Store adalah website satu halaman (single-page) yang menampilkan katalog akun Mobile Legends. Pengunjung dapat melihat rank, jumlah hero dan skin, server, dan harga setiap akun, lalu menghubungi kontak yang tersedia untuk bertanya lebih lanjut. Navigasi antarsection dilakukan melalui navbar dan footer.
 
 ## Latar Belakang dan Tujuan
 
 Memilih akun Mobile Legends biasanya membutuhkan perbandingan rank, koleksi hero, skin, dan harga. Akashi Store dibuat untuk menyajikan informasi tersebut dengan cara yang mudah dibaca dan dibandingkan.
 
-Dari sisi pembelajaran, project ini bertujuan untuk:
-- Menerapkan HTML, CSS, dan JavaScript dasar untuk membangun website yang berfungsi.
-- Menerapkan workflow kolaborasi di GitHub: issue, branch, commit, pull request, dan review.
+Tujuan project ini:
+- Membangun website statis yang berfungsi dengan HTML, CSS, dan JavaScript dasar.
+- Menerapkan workflow kolaborasi GitHub: issue, branch, commit, pull request, dan review.
 - Membiasakan pembagian tugas dan tanggung jawab dalam tim developer.
 
 ## Fitur
 
-- **Navbar** dengan tautan ke setiap section dan tampilan yang menyesuaikan layar ponsel.
-- **Home / Hero** berisi pengenalan Akashi Store, tombol ajakan menuju katalog, dan tiga kartu informasi.
-- **Tentang Kami** menjelaskan fungsi website dan informasi yang bisa dilihat pengunjung.
-- **Katalog Akun** berisi daftar akun yang dapat digeser dengan tombol panah atau drag. Setiap akun memiliki galeri foto dan spesifikasi (rank tertinggi, jumlah hero, jumlah skin, server, dan harga).
-- **Kontak** melalui WhatsApp dan email.
+- **Navbar** dengan tautan ke setiap section. Navbar tetap terlihat saat halaman di-scroll dan menyesuaikan layar ponsel.
+- **Home / Hero** berisi pengenalan Akashi Store, tombol menuju katalog, dan tiga kartu informasi. Animasi logo dinonaktifkan di layar kecil.
+- **Tentang Kami** berisi latar belakang, visi, dan misi Akashi Store.
+- **Katalog Akun** berisi daftar akun yang bisa digeser dengan tombol panah atau drag. Setiap akun memiliki galeri foto dan spesifikasi: rank tertinggi, jumlah hero, jumlah skin, server, dan harga.
+- **Kontak** melalui WhatsApp, Instagram, dan email.
 - **Footer** berisi navigasi cepat dan informasi hak cipta.
-- Animasi otomatis dinonaktifkan bagi pengguna yang mengaktifkan pengaturan *reduced motion*.
+- Animasi dinonaktifkan bagi pengguna yang mengaktifkan pengaturan *reduced motion*.
 
 ## Teknologi
 
@@ -60,53 +60,58 @@ Website ini tidak memerlukan instalasi tambahan.
    ```
    Lalu buka `http://localhost:8000` di browser. Di macOS/Linux, gunakan `python3`.
 
-Pastikan file gambar (`logo.jpeg`, `slide1.jpeg`, `slide2.jpeg`) berada di folder yang sama dengan `index.html`.
+Pastikan semua file gambar berada di folder yang sama dengan `index.html`.
 
 ## Anggota Kelompok
 
-Kelompok: [nama kelompok]
+Kelompok: Hunter
 
 | Nama | Username GitHub | Bagian |
 |---|---|---|
-| Zaky Izzatul Zulfia | [@username1] | Navbar & Home / Hero |
-| Randy Fadlan Sophian | [@username2] | About / Profile |
-| Dede Wahyudin | [@username3] | Main Content (Katalog Akun) |
-| Ahmad Nur Latif | [@username4] | Contact & Footer |
+| Zaky Izzatul Zulfia | @Zukchan | Navbar & Home / Hero |
+| Randy Fadlan Sophian | @randyfadlansop-hub | About / Profile |
+| Dede Wahyudin | @hafigg | Main Content (Katalog Akun) |
+| Ahmad Nur Latif | @ahmadnurlatif | Contact & Footer |
 
 ## Pembagian Tugas dan Kontribusi
 
 **Zaky Izzatul Zulfia - Navbar & Home / Hero**
 - Branch: `feature/homepage`
-- Issue: #[nomor], #[nomor]
-- Pekerjaan: merapikan navbar dan hero, memeriksa tombol dan animasi di homepage, serta memastikan tampilan responsif.
+- Issue:
+  - #8 Perbaiki navbar agar responsif dan semua link berfungsi
+  - #9 Rapikan hero dan homepage
 - Pull Request: https://github.com/Zukchan/akashi-store/pull/6
 
 **Randy Fadlan Sophian - About / Profile**
 - Branch: `feature/about`
-- Issue: #[nomor], #[nomor]
-- Pekerjaan: melengkapi latar belakang, visi dan misi, menyelaraskan penamaan menu, serta memeriksa tampilan About di layar kecil.
+- Issue:
+  - #10 Lengkapi latar belakang, visi, dan misi di section About
+  - #11 Samakan penamaan dan periksa tampilan About di layar kecil
 - Pull Request: https://github.com/Zukchan/akashi-store/pull/7
 
 **Dede Wahyudin - Main Content (Katalog Akun)**
 - Branch: `feature/main-content`
-- Issue: #[nomor], #[nomor]
-- Pekerjaan: melengkapi data Akun #2 dan #3, serta mengganti foto sesuai masing-masing akun.
+- Issue:
+  - #12 Lengkapi data Akun #2 dan Akun #3
+  - #13 Ganti foto agar setiap akun memiliki foto sendiri
 - Pull Request: https://github.com/Zukchan/akashi-store/pull/5
 
 **Ahmad Nur Latif - Contact & Footer**
 - Branch: `feature/contact`
-- Issue: #[nomor], #[nomor]
-- Pekerjaan: merapikan bagian kontak, termasuk status Instagram, serta menyelaraskan footer dan menghapus CSS yang duplikat.
+- Issue:
+  - #14 Perjelas kontak Instagram
+  - #[nomor] Rapikan CSS footer dan label navigasi
 - Pull Request: https://github.com/Zukchan/akashi-store/pull/4
 
 **Bersama:** README dan screenshot. PIC: [nama].
 
 ## Alur Kerja Git
 
-- Setiap anggota membuat branch sendiri dengan format `feature/nama-fitur`.
-- Setiap perubahan dikirim melalui Pull Request ke branch `main`.
+- Buat branch dari `main` dengan format `feature/nama-fitur`.
+- Commit perubahan yang relevan, lalu push ke GitHub.
+- Buat Pull Request ke `main`. Tulis `Closes #nomor` di deskripsi PR agar issue otomatis tertutup saat PR di-merge.
 - Setiap Pull Request direview minimal oleh satu anggota lain sebelum di-merge.
-- Branch `main` diusahakan selalu berisi versi website yang dapat dijalankan.
+- Branch `main` selalu berisi versi website yang dapat dijalankan.
 
 ## Screenshot
 
