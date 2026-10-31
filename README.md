@@ -103,7 +103,7 @@ Kelompok: Hunter
   - #[nomor] Rapikan CSS footer dan label navigasi
 - Pull Request: https://github.com/Zukchan/akashi-store/pull/4
 
-**Bersama:** README dan screenshot. PIC: [nama].
+**Bersama:** README dan screenshot.
 
 ## Alur Kerja Git
 
