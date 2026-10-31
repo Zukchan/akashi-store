@@ -64,7 +64,7 @@ Pastikan file gambar (`logo.jpeg`, `slide1.jpeg`, `slide2.jpeg`) berada di folde
 
 ## Anggota Kelompok
 
-Kelompok: [nama kelompok]
+Kelompok: 
 
 | Nama | Username GitHub | Bagian |
 |---|---|---|
@@ -93,7 +93,7 @@ Kelompok: [nama kelompok]
 - Branch: `feature/contact`
 - Pekerjaan: merapikan bagian kontak, termasuk status Instagram, serta menyelaraskan footer dan menghapus CSS yang duplikat.
 
-**Bersama:** README dan screenshot. PIC: [nama].
+**Bersama:** README dan screenshot. PIC:.
 
 ## Alur Kerja Git
 
