@@ -100,7 +100,7 @@ Kelompok: Hunter
 - Branch: `feature/contact`
 - Issue:
   - #14 Perjelas kontak Instagram
-  - #[nomor] Rapikan CSS footer dan label navigasi
+  - #15 Rapikan CSS footer dan label navigasi
 - Pull Request: https://github.com/Zukchan/akashi-store/pull/4
 
 **Bersama:** README dan screenshot.
